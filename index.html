@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .form-box {
+            background: white;
+            padding: 25px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Feedback Form</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <p id="nameError" class="error"></p>
+
+    <label>Email:</label>
+    <input type="text" id="email">
+    <p id="emailError" class="error"></p>
+
+    <label>Feedback:</label>
+    <textarea id="feedback" rows="4"></textarea>
+    <p id="feedbackError" class="error"></p>
+
+    <button id="submitBtn">Submit</button>
+
+    <p id="message" class="success"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
