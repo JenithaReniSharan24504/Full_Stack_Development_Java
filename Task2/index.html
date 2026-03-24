@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Dashboard</h2>
+
+<!-- Filter -->
+<label>Filter by Department:</label>
+<select id="departmentFilter">
+    <option value="All">All</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="IT">IT</option>
+</select>
+
+<!-- Sorting -->
+<div class="buttons">
+    <button onclick="sortByName()">Sort by Name</button>
+    <button onclick="sortByDate()">Sort by Date</button>
+</div>
+
+<!-- Table -->
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<!-- Count -->
+<h3 id="countDisplay"></h3>
+
+<script src="script.js"></script>
+</body>
+</html>
